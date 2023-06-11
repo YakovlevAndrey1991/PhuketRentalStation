@@ -1,0 +1,39 @@
+
+.nav {
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  padding: 30px 119px 0 139px;
+  display: grid;
+  grid-template-columns: 200px 1fr 1fr;
+  &__logo {
+    width: 200px;
+    height: 50px;
+  }
+  &__bar li {
+    display: inline-block;
+    text-decoration: none;
+  }
+  &__social {
+    display: flex;
+    gap: 8px;
+    justify-content: end;
+    align-items: center;
+      li {
+        display: inline-block;
+        text-decoration: none;
+    }
+  }
+  &__theme {
+    padding-left: 30px;
+    width: 71px;
+    height: 36px;
+
+  }
+  &__language {
+    padding-left: 30px  ;
+  }
+
+
+}

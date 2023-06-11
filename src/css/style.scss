@@ -1,12 +1,14 @@
+@import "../sass/libs/bootstrap-reboot.min";
+
 * {
+  color: #ffffff;
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
-  background-color: grey;
+  background-color: #1A1A1A;
 }
 
 .container {
-  margin: 20px;
-  background-color: white;
-  //min-width: 100px;
-  min-height: 50px;
+  margin: 0 auto;
 }
+
+@import "../sass/blocks/nav";
