@@ -5,7 +5,6 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
-@import "../sass/libs/bootstrap-grid.min.css";
 *, ::after, ::before {
   box-sizing: border-box;
 }
@@ -390,7 +389,6 @@ progress {
   color: #ffffff;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
-  background-color: #1A1A1A;
 }
 
 body {
@@ -400,26 +398,31 @@ body {
 .container {
   max-width: 1920px;
   width: 100%;
-  padding: 35px 119px 0 139px;
   margin: 0 auto;
-  background-color: #1A1A1A;
 }
 
-.nav {
+.nav__social__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.nav__wrapper {
   display: grid;
-  grid-template-columns: 0.5fr 2fr 2fr;
+  grid-template-columns: repeat(16, 1fr);
+  padding: 30px 20px 0 20px;
+  gap: 20px;
 }
 .nav__logo {
-  display: flex;
+  grid-column: 2/4;
   gap: 11px;
+  display: flex;
   width: 200px;
   height: 50px;
 }
 .nav__bar {
-  padding-left: 60px;
+  grid-column: 4/10;
   display: flex;
-  justify-content: start;
-  align-items: center;
+  justify-content: space-between;
 }
 .nav__bar-list_wrapper {
   margin-bottom: 0;
@@ -440,20 +443,22 @@ body {
 }
 .nav__bar li {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 22px;
+  font-size: 22px;
+  line-height: 120%;
   list-style-type: none;
 }
 .nav__bar li a:hover {
   color: #6747E9;
 }
 .nav__social {
+  background: none;
+  z-index: 1;
+  grid-column: 13/15;
   display: flex;
-  gap: 8px;
-  justify-content: end;
-  align-items: center;
+  justify-content: space-around;
 }
 .nav__social-list_wrapper {
+  background: none;
   padding-right: 30px;
   margin-bottom: 0;
   display: flex;
@@ -462,6 +467,7 @@ body {
   gap: 8px;
 }
 .nav__social-item {
+  background: none;
   width: 35px;
   height: 35px;
   border: 1px solid #ffffff;
@@ -472,6 +478,7 @@ body {
   align-items: center;
 }
 .nav__theme {
+  background: none;
   line-height: 0.5;
   width: 71px;
   height: 36px;
@@ -482,6 +489,7 @@ body {
   border-radius: 50px;
 }
 .nav .moon-wrapper {
+  background: none;
   border-radius: 50px;
   padding-left: 4px;
 }
@@ -494,20 +502,26 @@ body {
 }
 .nav .moon-btn img {
   line-height: 0.5;
-  background-color: #ffffff;
+  background: none;
 }
 .nav .sun-wrapper {
+  background: none;
   border-radius: 50px;
   padding-right: 4px;
 }
 .nav .sun-btn {
+  background: none;
   width: 28px;
   height: 28px;
   border: none;
   border-radius: 50px;
 }
+.nav .sun-btn img {
+  background: none;
+}
 .nav__language {
   padding-left: 30px;
+  background: none;
 }
 
 .logo__header {
@@ -522,6 +536,7 @@ body {
 }
 
 .logo__title {
+  font-size: 18px;
   font-weight: 800;
 }
 
@@ -534,12 +549,230 @@ body {
 }
 
 .social__link {
+  background: none;
   line-height: 0.5;
+}
+.social__link img {
+  background: none;
 }
 
 .bar__link {
   text-decoration: none;
   color: white;
+}
+
+.promo__wrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  padding: 0 20px;
+  gap: 20px;
+}
+.promo__text__wrapper {
+  padding-top: 120px;
+  grid-column: 2/8;
+}
+.promo__header {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 120%;
+}
+.promo__title {
+  padding-top: 30px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+}
+.promo__phone {
+  margin-top: 50px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 120%;
+}
+.promo__phone a {
+  color: inherit;
+  text-decoration: none;
+}
+.promo__messengers {
+  display: flex;
+  gap: 10px;
+  margin-top: 25px;
+}
+.promo__rectangle {
+  grid-column: 17/10;
+  position: absolute;
+  display: flex;
+  justify-content: end;
+  top: -80px;
+  background: linear-gradient(116.95deg, #9075FF 15.81%, #3B1BBD 105.38%);
+  border-radius: 0 0 30px 30px;
+}
+.promo__rectangle img {
+  padding-right: 20px;
+  padding-top: 0;
+  max-width: 125%;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 155px;
+  height: 49px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120%;
+  border-radius: 10px;
+  border: none;
+  color: inherit;
+  text-decoration: none;
+  text-underline: none;
+}
+.btn img {
+  padding-right: 10px;
+}
+
+.btn:hover {
+  color: inherit;
+}
+
+.whatsapp {
+  background-color: #65BC54;
+}
+.whatsapp:hover {
+  background-color: #2F9B1A;
+}
+
+.telegram {
+  background-color: #2AA1DA;
+}
+.telegram:hover {
+  background-color: #1895D1;
+}
+
+.toBook {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  background: #6747E9;
+  border-radius: 10px;
+  padding: 15px 25px;
+  border: none;
+}
+
+.catalog__wrapper {
+  margin-top: 220px;
+}
+.catalog__header {
+  text-align: center;
+}
+.catalog__header h2 {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 120%;
+}
+.catalog__tabs {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+.catalog__tabs-choose {
+  width: 146px;
+  padding: 15px 30px;
+  background-color: inherit;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  border: 1px solid #393E52;
+}
+.catalog__tabs-choose-bike {
+  border-radius: 10px 0 0 10px;
+}
+.catalog__tabs-choose-car {
+  border-radius: 0 10px 10px 0;
+}
+.catalog__cards__wrapper {
+  display: flex;
+  margin: 30px 20px 20px 100px;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.catalog__card__wrapper {
+  max-width: 455px;
+  min-width: 324px;
+  background: #272727;
+  border-radius: 20px;
+}
+.catalog__slider img {
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+}
+.catalog__card__info {
+  margin: 15px 20px 0 20px;
+}
+.catalog__card-name {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+}
+.catalog__card-descr {
+  margin-top: 15px;
+  color: #898989;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 170%;
+}
+.catalog__card-options {
+  margin-top: 15px;
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.catalog .option {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  border-radius: 50px;
+  text-align: center;
+  padding: 5px 5px 5px 5px;
+}
+.catalog .holder {
+  color: #2F9B1A;
+  background: #283426;
+}
+.catalog .helmets {
+  color: #A532FF;
+  background: #362841;
+}
+.catalog .baggage {
+  color: #2F9B1A;
+  background: #283426;
+}
+.catalog__card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+}
+.catalog__card-price {
+  text-align: center;
+  vertical-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 140%;
+}
+.catalog__card-price span {
+  color: #6747E9;
+}
+
+.tab-active {
+  background-color: #6747E9;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,21 +1,34 @@
 @import "../base/variables";
 
 .nav {
-  display: grid;
-  grid-template-columns: 0.5fr 2fr 2fr;
+
+
+  &__social__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    padding: 30px 20px 0 20px ;
+    gap: 20px;
+  }
 
   &__logo {
-    display: flex;
+    grid-column: 2/4;
     gap: 11px;
+    display: flex;
     width: 200px;
     height: 50px;
   }
 
+
   &__bar {
-    padding-left: 60px;
+    grid-column: 4/10;
     display: flex;
-    justify-content: start;
-    align-items: center;
+    justify-content: space-between;
 
     &-list_wrapper {
       margin-bottom: 0;
@@ -38,8 +51,8 @@
 
   &__bar li {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 22px;
+    line-height: 120%;
     list-style-type: none;
 
     a:hover {
@@ -48,12 +61,14 @@
   }
 
   &__social {
+    background: none;
+    z-index: 1;
+    grid-column: 13/15;
     display: flex;
-    gap: 8px;
-    justify-content: end;
-    align-items: center;
+    justify-content: space-around;
 
     &-list_wrapper {
+      background: none;
       padding-right: 30px;
       margin-bottom: 0;
       display: flex;
@@ -63,6 +78,7 @@
     }
 
     &-item {
+      background: none;
       width: 35px;
       height: 35px;
       border: 1px solid #ffffff;
@@ -75,6 +91,7 @@
   }
 
   &__theme {
+    background: none;
     line-height: 0.5;
     width: 71px;
     height: 36px;
@@ -87,6 +104,7 @@
 
   }
   .moon-wrapper {
+    background: none;
     border-radius: 50px;
     padding-left: 4px;
   }
@@ -98,24 +116,27 @@
     border-radius: 50px;
     img {
       line-height: 0.5;
-      background-color: #ffffff;
+      background: none;
     }
   }
   .sun-wrapper {
+    background: none;
     border-radius: 50px;
     padding-right: 4px;
   }
   .sun-btn {
+    background: none;
     width: 28px;
     height: 28px;
     border: none;
     border-radius: 50px;
     img {
+      background: none;
     }
   }
 
   &__language {
-    padding-left: 30px;
+    padding-left: 30px;background: none;
   }
 }
 
@@ -131,6 +152,7 @@
 }
 
 .logo__title {
+  font-size: 18px;
   font-weight: 800;
 }
 
@@ -143,7 +165,11 @@
 }
 
 .social__link {
+  background: none;
   line-height: 0.5;
+  img {
+    background: none;
+  }
 }
 
 .bar__link {

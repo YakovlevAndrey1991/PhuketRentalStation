@@ -1,11 +1,46 @@
-.whatsApp {
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 155px;
+  height: 49px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120%;
+  border-radius: 10px;
+  border: none;
+  color: inherit;
+  text-decoration: none;
+  text-underline: none;
 
+  img {
+    padding-right: 10px;
+  }
+}
+.btn:hover {
+  color: inherit;
+}
+
+.whatsapp {
+  background-color: #65BC54;
+  &:hover {
+    background-color: #2F9B1A;
+  }
 }
 
 .telegram {
-
+  background-color: #2AA1DA;
+  &:hover {
+    background-color: #1895D1;
+  }
 }
 
 .toBook {
-
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  background: #6747E9;
+  border-radius: 10px;
+  padding: 15px 25px;
+  border: none;
 }

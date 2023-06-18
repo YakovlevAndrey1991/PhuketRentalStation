@@ -1,0 +1,144 @@
+@import "../base/variables";
+
+.catalog {
+
+  &__wrapper {
+    margin-top: 220px;
+  }
+
+  &__header {
+    text-align: center;
+
+    h2 {
+      font-weight: 500;
+      font-size: 45px;
+      line-height: 120%;
+    }
+
+  }
+
+  &__tabs {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+
+    &-choose {
+      width: 146px;
+      padding: 15px 30px;
+
+      background-color: inherit;
+
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 120%;
+
+      border: 1px solid #393E52;
+
+      &-bike {
+        border-radius: 10px 0 0 10px;
+      }
+
+      &-car {
+        border-radius: 0 10px 10px 0;
+      }
+    }
+
+  }
+
+  &__cards__wrapper {
+    display: flex;
+    margin: 30px 20px 20px 100px;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+  }
+
+  &__card__wrapper {
+    max-width: 455px;
+    min-width: 324px;
+    background: #272727;
+    border-radius: 20px;
+  }
+
+  &__slider {
+    img {
+      border-radius: 20px 20px 0 0;
+      width: 100%;
+    }
+  }
+
+  &__card__info {
+    margin: 15px 20px 0 20px;
+  }
+
+  &__card-name {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+  }
+
+  &__card-descr {
+    margin-top: 15px;
+    color: #898989;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 170%;
+  }
+
+  &__card-options {
+    margin-top: 15px;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .option {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    border-radius: 50px;
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+  }
+  .holder {
+    color: #2F9B1A;
+    background: #283426;
+  }
+
+  .helmets {
+    color: #A532FF;
+    background: #362841;
+  }
+
+  .baggage {
+    color: #2F9B1A;
+    background: #283426;;
+  }
+
+  &__card__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  &__card-price {
+    text-align: center;
+    vertical-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 140%;
+    span {
+      color: $purple;
+    }
+  }
+
+}
+
+.tab-active {
+  background-color: $purple;
+}
