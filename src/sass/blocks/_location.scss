@@ -1,0 +1,56 @@
+@import "../base/variables";
+
+.location {
+
+  &__wrapper {
+    margin: 70px 20px 0 139px;
+    display: flex;
+    gap: 133px;
+  }
+
+  &__header {
+    padding-left: 25px;
+    border-left: 5px solid $purple;
+
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 120%;
+  }
+
+  &__title {
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%
+  }
+  &__contacts-wrapper {
+    margin-top: 70px;
+  }
+
+  &__contacts {
+    margin-top: 19px;
+    display: flex;
+    gap: 19px;
+  }
+
+  &__address-text {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 140%;
+    a {
+      color: inherit;
+      text-decoration: none;
+      &:hover {
+        color: $purple;
+      }
+    }
+  }
+
+  &__map {
+    border: 5px solid $purple;
+    width: 1286px;
+    height: 474px;
+    border-radius: 30px;
+
+  }
+}

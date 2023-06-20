@@ -47,10 +47,11 @@
 
   &__cards__wrapper {
     display: flex;
-    margin: 30px 20px 20px 100px;
+    margin: 30px 20px 0 20px;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+
 
   }
 
@@ -137,7 +138,19 @@
     }
   }
 
+  &__note {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: center;
+    span {
+      color: $purple;
+    }
+  }
+
 }
+
 
 .tab-active {
   background-color: $purple;
