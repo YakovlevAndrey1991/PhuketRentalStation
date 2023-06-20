@@ -878,4 +878,122 @@ body {
   border-radius: 30px;
 }
 
+.faq__wrapper {
+  display: flex;
+  gap: 120px;
+  margin: 70px 20px 0 20px;
+  background: linear-gradient(116.95deg, #9075FF 15.81%, #3B1BBD 105.38%);
+  border-radius: 30px;
+}
+.faq__header {
+  margin-top: 70px;
+  margin-left: 110px;
+}
+.faq__header-header {
+  width: 474px;
+  border-left: 5px solid #ffffff;
+  padding-left: 25px;
+}
+.faq__header-header h2 {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 120%;
+}
+.faq__header-box {
+  z-index: 1;
+  position: relative;
+  margin-top: 60px;
+}
+.faq__header-box_img img {
+  border-radius: 30px;
+}
+.faq__header-box_rectangle {
+  position: absolute;
+  z-index: -1;
+  width: 205px;
+  height: 205px;
+  background: linear-gradient(216.42deg, #6747E9 -3.37%, #7958FF 87.72%);
+  border-radius: 20px;
+  left: 160px;
+  top: 220px;
+}
+.faq__questions {
+  width: 100%;
+  color: black;
+  position: relative;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  margin-top: 70px;
+  margin-right: 119px;
+}
+.faq__questions-item {
+  width: 100%;
+  padding: 30px 30px 30px 30px;
+  border-radius: 30px;
+  background-color: #fff;
+  transition: 0.1s all;
+}
+.faq__questions-item-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.faq__questions-item:hover {
+  background: linear-gradient(250.06deg, #7D5EFF 20.17%, #7958FF 65.4%);
+  box-shadow: 0px 20px 40px rgba(45, 24, 131, 0.3);
+  cursor: pointer;
+}
+.faq__questions-item:hover p {
+  color: white;
+}
+.faq__questions-item:hover span {
+  color: white;
+}
+.faq__questions-item span {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 140%;
+  color: black;
+}
+.faq__questions-item p {
+  text-align: justify;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  margin-top: 18px;
+  margin-bottom: 0;
+  color: #222222;
+}
+.faq__symbol {
+  width: 50px;
+  height: 50px;
+}
+.faq__symbol-circle {
+  border: 1px solid black;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vertical {
+  background-color: #393E52;
+  width: 2px;
+  height: 20px;
+}
+
+.horizontal {
+  position: absolute;
+  background-color: #393E52;
+  width: 20px;
+  height: 2px;
+}
+
+.hide {
+  display: none;
+}
+
 /*# sourceMappingURL=style.css.map */
