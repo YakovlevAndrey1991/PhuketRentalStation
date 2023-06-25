@@ -23,8 +23,8 @@
 
             <div class="nav__bar">
                 <ul class="nav__bar-list_wrapper">
-                    <li><a class="bar__link" href="#">О нас</a></li>
                     <li><a class="bar__link" href="#">Байки</a></li>
+                    <li><a class="bar__link" href="#">О нас</a></li>
                     <li><a class="bar__link" href="#">Контакты</a></li>
                     <li><a class="bar__link" href="#">Вопрос-ответ</a></li>
                 </ul>
@@ -127,11 +127,11 @@
 
                 <div class="catalog__card__wrapper">
                     <div class="catalog__slider">
-                        <img src="img/pcx.jpg" alt="pcx">
+                        <img src="img/1_horizontal.jpg" alt="xmax">
                     </div>
                     <div class="catalog__card__info">
                         <div class="catalog__card-name">Yamaha NMax 2022</div>
-                        <div class="catalog__card-descr">Объем двигателя: 155 сс <br>
+                        <div class="catalog__card-descr">Объем двигателя: 300 cc <br>
                             КПП: автоматическая <br>
                             Объем бака: 7л или ~300 км. <br>
                         </div>
@@ -144,7 +144,7 @@
                     <div class="catalog__card__footer">
                         <div class="catalog__card-price"><span>350 ฿</span>/сутки*</div>
                         <div class="catalog__card-button">
-                            <button class="toBook">
+                            <button data-modal="booking" class="toBook">
                                 Забронировать
                             </button>
                         </div>
@@ -171,7 +171,7 @@
                     <div class="catalog__card__footer">
                         <div class="catalog__card-price"><span>350 ฿</span>/сутки*</div>
                         <div class="catalog__card-button">
-                            <button class="toBook">
+                            <button data-modal="booking" class="toBook">
                                 Забронировать
                             </button>
                         </div>
@@ -198,7 +198,7 @@
                     <div class="catalog__card__footer">
                         <div class="catalog__card-price"><span>350 ฿</span>/сутки*</div>
                         <div class="catalog__card-button">
-                            <button class="toBook">
+                            <button data-modal="booking" class="toBook">
                                 Забронировать
                             </button>
                         </div>
@@ -268,7 +268,7 @@
         </div>
     </div>
 </section>
-<section class="location">
+<section class="location hide">
     <div class="container">
         <div class="location__wrapper">
             <div class="location__info">
@@ -508,40 +508,67 @@
             </div>
         </div>
 
-<!--        <div class="nav__social footer__social">-->
-<!--            <div class="nav__social__wrapper">-->
-<!--                <ul class="nav__social-list_wrapper">-->
-<!--                    <li class="nav__social-item">-->
-<!--                        <a class="social__link" href="#">-->
-<!--                            <img src="icons/instagram.svg" alt="instagram">-->
-<!--                        </a>-->
-<!--                    </li>-->
-<!--                    <li class="nav__social-item">-->
-<!--                        <a class="social__link" href="#">-->
-<!--                            <img src="icons/facebook.svg" alt="facebook">-->
-<!--                        </a>-->
-<!--                    </li>-->
-<!--                    <li class="nav__social-item">-->
-<!--                        <a class="social__link" href="#">-->
-<!--                            <img src="icons/vk.svg" alt="vk">-->
-<!--                        </a>-->
-<!--                    </li>-->
-<!--                    <li class="nav__social-item">-->
-<!--                        <a class="social__link" href="#">-->
 
-<!--                            <img src="icons/whatsapp.svg" alt="whatsapp">-->
-<!--                        </a>-->
-<!--                    </li>-->
-<!--                    <li class="nav__social-item">-->
-<!--                        <a class="social__link" href="#">-->
-<!--                            <img src="icons/telegram.svg" alt="telegram">-->
-<!--                        </a>-->
-<!--                    </li>-->
-<!--                </ul>-->
-<!--            </div>-->
-<!--        </div>-->
     </div>
 </footer>
+
+<div class="overlay">
+    <div class="modal">
+        <div class="modal__close">&times;</div>
+        <div class="modal__subtitle">
+            <div class="modal__descr">
+                <h3>
+                    Забронировать
+                </h3>
+                <p>
+                    Для бронирования автомобиля свяжитесь с нами удобным для вас способом:
+                </p>
+                <div class="promo__messengers">
+                    <a class="btn whatsapp" target="_blank" type="button" href="https://wa.me/+79778651827"><img
+                            src="icons/whatsapp.svg" alt="whatsApp">WhatsApp</a>
+                    <a class="btn telegram" target="_blank" type="button" href="https://t.me/rentstation01"><img
+                            src="icons/telegram.svg" alt="whatsApp">Telegram</a>
+                </div>
+
+                <div class="modal__phone">
+                    <a href="tel:+66935783606">+66-935-78-3606</a></div>
+                <div class="nav__social footer__social modal__social">
+                    <div class="nav__social__wrapper">
+                        <ul class="footer__list_wrapper">
+                            <li class="nav__social-item">
+                                <a class="footer__social__link" href="#">
+                                    <img src="icons/instagram.svg" alt="instagram">
+                                </a>
+                            </li>
+                            <li class="nav__social-item">
+                                <a class="footer__social__link" href="#">
+                                    <img src="icons/facebook.svg" alt="facebook">
+                                </a>
+                            </li>
+                            <li class="nav__social-item">
+                                <a class="footer__social__link" href="#">
+                                    <img src="icons/vk.svg" alt="vk">
+                                </a>
+                            </li>
+                            <li class="nav__social-item">
+                                <a class="footer__social__link" href="#">
+
+                                    <img src="icons/whatsapp.svg" alt="whatsapp">
+                                </a>
+                            </li>
+                            <li class="nav__social-item">
+                                <a class="footer__social__link" href="#">
+                                    <img src="icons/telegram.svg" alt="telegram">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <script src="js/script.js"></script>
