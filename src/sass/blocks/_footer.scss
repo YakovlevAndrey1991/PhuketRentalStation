@@ -1,0 +1,44 @@
+@import "../base/variables";
+
+.footer {
+  padding: 25px 0 25px 0;
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    padding: 30px 20px 0 20px ;
+    gap: 20px;
+  }
+  &__social {
+    grid-column: 14/16;
+  }
+  &__bar {
+    grid-column: 5/11;
+  }
+}
+
+.footer__list_wrapper {
+  background: none;
+  padding-right: 30px;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer__social__link {
+  width: 35px;
+  height: 35px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 10px;
+  border: 1px solid #ffffff;
+  transition: 0.2s all;
+  &:hover {
+    background-color: $purple;
+    border: 1px solid $purple;
+  }
+}

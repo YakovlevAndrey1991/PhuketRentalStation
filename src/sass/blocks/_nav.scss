@@ -1,8 +1,6 @@
 @import "../base/variables";
 
 .nav {
-
-
   &__social__wrapper {
     display: flex;
     align-items: center;
@@ -12,8 +10,11 @@
   &__wrapper {
     display: grid;
     grid-template-columns: repeat(16, 1fr);
-    padding: 30px 20px 0 20px ;
     gap: 20px;
+  }
+  &__padding {
+    padding: 30px 20px 0 20px ;
+
   }
 
   &__logo {
@@ -37,28 +38,31 @@
       align-items: center;
       gap: 40px;
       padding: 0;
+
       li {
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        height: 50px;
-      }
-      li:hover {
-        border-bottom: 1px solid $purple;
+        list-style-type: none;
+
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 400;
+          font-size: 22px;
+          line-height: 120%;
+          height: 50px;
+          text-decoration: none;
+          color: white;
+          transition: 0.2s all;
+
+        }
+        a:hover {
+          color: $purple;
+          border-bottom: 1px solid $purple;
+        }
       }
     }
   }
 
-  &__bar li {
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 120%;
-    list-style-type: none;
-
-    a:hover {
-      color: $purple;
-    }
-  }
 
   &__social {
     background: none;
@@ -78,15 +82,24 @@
     }
 
     &-item {
-      background: none;
-      width: 35px;
-      height: 35px;
-      border: 1px solid #ffffff;
-      border-radius: 10px;
       list-style-type: none;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    }
+  }
+
+  .social__link {
+    width: 35px;
+    height: 35px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+    transition: 0.2s all;
+    &:hover {
+      background-color: #393E52;
+      border: none;
     }
   }
 
@@ -164,15 +177,6 @@
   display: flex;
 }
 
-.social__link {
-  background: none;
-  line-height: 0.5;
-  img {
-    background: none;
-  }
-}
 
-.bar__link {
-  text-decoration: none;
-  color: white;
-}
+
+

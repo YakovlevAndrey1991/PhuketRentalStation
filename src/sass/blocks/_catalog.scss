@@ -18,9 +18,11 @@
   }
 
   &__tabs {
-    margin-top: 40px;
-    display: flex;
+    display: none;
     justify-content: center;
+
+    margin-top: 40px;
+
 
     &-choose {
       width: 146px;
