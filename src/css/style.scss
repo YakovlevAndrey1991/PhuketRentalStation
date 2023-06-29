@@ -1,14 +1,17 @@
-@import "../sass/libs/bootstrap-reboot.min";
+//@import "../sass/libs/bootstrap-reboot.min";
 
 * {
   color: #ffffff;
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
-  //background-color: #1A1A1A;
 }
 
 body {
   background-color: #1A1A1A;
+}
+
+.hidden {
+  overflow: hidden;
 }
 
 .container {
@@ -33,3 +36,8 @@ body {
 .show {
   display: block;
 }
+
+.hide {
+  display: none;
+}
+

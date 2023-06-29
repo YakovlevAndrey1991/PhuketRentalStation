@@ -1,15 +1,16 @@
 @import "../base/variables";
 
-.overlay {
+.overlay__nob {
   display: none;
   position: fixed;
+  z-index: 1000;
   width: 100%;
   height: 100%;
   top: 0;
   background-color: rgba(0,0,0, .88);
 }
 
-.modal {
+.modal__window {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -18,65 +19,72 @@
   height: 326px;
   background-color: #fff;
   border-radius: 8px;
-  &__close {
-    top: -4%;
-    position: absolute;
-    font-size: 40px;
-    left: 92%;
-    color: #222222;
-
-    &:hover {
-      cursor: pointer;
-      color: $purple;
-    }
-  }
-
-  &__descr {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #222222;
-
-    text-align: center;
-    padding: 30px;
-    h3 {
+  .modal {
+    &__close {
+      top: -4%;
+      position: absolute;
+      font-size: 40px;
+      left: 92%;
       color: #222222;
-      font-size: 30px;
-      font-weight: 500;
-      line-height: 120%;
-    }
-    p {
-      color: #222222;
-      font-size: 16px;
-      line-height: 140%;
-    }
 
-  }
-
-  &__phone {
-    margin-top: 20px  ;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 120%;
-    a {
-      color: #222222;
-      text-decoration: none;
       &:hover {
+        cursor: pointer;
         color: $purple;
       }
     }
-  }
+    &__descr {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #222222;
 
-  &__social {
-    margin-top: 20px;
-    a {
-      background-color: $purple;
-      &:hover {
-        border: 1px solid #222222;
-        background-color: #222222;
+      text-align: center;
+      padding: 30px;
+      h3 {
+        color: #222222;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 120%;
+      }
+      p {
+        color: #222222;
+        font-size: 16px;
+        line-height: 140%;
       }
 
     }
+
+    &__phone {
+      margin-top: 20px  ;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 120%;
+      a {
+        color: #222222;
+        text-decoration: none;
+        &:hover {
+          color: $purple;
+        }
+      }
+    }
+
+    &__social {
+      margin-top: 20px;
+      a {
+        background-color: $purple;
+        &:hover {
+          border: 1px solid #222222;
+          background-color: #222222;
+        }
+
+      }
+    }
   }
+  }
+
+
+.modal__slider__wrapper {
+  width: 800px;
+  height: 500px;
 }

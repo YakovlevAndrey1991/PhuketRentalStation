@@ -60,31 +60,41 @@
     margin-right: 119px;
     &-item {
       width: 100%;
-      padding: 30px 30px 30px 30px;
+      padding: 15px 30px 15px 30px;
       border-radius: 30px;
       background-color: #fff;
       transition: 0.1s all;
       &-wrapper {
         display: flex;
+        height: 80px;
+        align-items: center;
         justify-content: space-between;
+        &:hover {
+          cursor: pointer;
+        }
       }
       &:hover {
+
+
         p {
           color: white;
+          cursor: default;
+
+
         }
         span {
           color: white;
         }
         background: linear-gradient(250.06deg, #7D5EFF 20.17%, #7958FF 65.4%);
         box-shadow: 0px 20px 40px rgba(45, 24, 131, 0.3);
-        cursor: pointer;
+
       }
 
       span {
         display: inline-block;
         font-weight: 400;
         font-size: 26px;
-        line-height: 140%;
+        line-height: 180%;
         color: black;
       }
       p {
@@ -119,6 +129,7 @@
   background-color: #393E52;
   width: 2px;
   height: 20px;
+
 }
 
 .horizontal {
@@ -129,6 +140,3 @@
   height: 2px;
 }
 
-.hide {
-  display: none;
-}
