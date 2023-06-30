@@ -24,6 +24,8 @@ body {
   justify-content: end;
 }
 .nav__wrapper {
+  position: relative;
+  z-index: 1000;
   display: grid;
   grid-template-columns: repeat(16, 1fr);
   gap: 20px;
@@ -525,7 +527,6 @@ body {
   text-align: center;
   align-items: center;
   width: 1286px;
-  height: 474px;
   border-radius: 30px;
 }
 
@@ -589,7 +590,6 @@ body {
 }
 .faq__questions-item-wrapper {
   display: flex;
-  height: 80px;
   align-items: center;
   justify-content: space-between;
 }
@@ -771,9 +771,26 @@ body {
   height: 500px;
 }
 
+@media (max-width: 1700px) {
+  .catalog__wrapper {
+    margin-top: 160px;
+  }
+  .about__header-header {
+    font-size: 36px;
+  }
+  .about__header {
+    gap: 180px;
+  }
+  .about__descr {
+    font-size: 24px;
+  }
+}
 @media (max-width: 1537px) {
   .nav__bar-list_wrapper li a {
     font-size: 16px;
+  }
+  .promo__rectangle img {
+    max-width: 120%;
   }
   .promo__text__wrapper {
     padding-top: 100px;
@@ -786,7 +803,87 @@ body {
     margin-top: 32px;
   }
   .catalog__wrapper {
-    margin-top: 160px;
+    margin-top: 130px;
+  }
+  .catalog__card__info {
+    min-height: 188px;
+  }
+  .catalog__header h2 {
+    font-size: 36px;
+  }
+  .catalog__card__wrapper {
+    max-width: 380px;
+  }
+  .catalog__card-name {
+    font-size: 20px;
+  }
+  .catalog__card-descr {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 160%;
+  }
+  .catalog__card-options {
+    margin-top: 12px;
+  }
+  .catalog .option {
+    font-size: 12px;
+  }
+  .catalog__card-price {
+    font-size: 20px;
+  }
+  .toBook {
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+  .catalog__note {
+    margin-top: 10px;
+  }
+  .about__header {
+    margin-top: 100px;
+    margin-right: 90px;
+    gap: 192px;
+  }
+  .about__header-header {
+    font-size: 36px;
+  }
+  .about__descr {
+    font-size: 22px;
+  }
+  .about__item-title {
+    font-size: 14px;
+  }
+  .location__address-text {
+    font-size: 20px;
+  }
+  .location__wrapper {
+    margin-left: 110px;
+  }
+  .location__title {
+    font-size: 18px;
+  }
+  .faq__wrapper {
+    gap: 60px;
+  }
+  .faq__header-header h2 {
+    font-size: 34px;
+  }
+  .faq__questions-item-wrapper span {
+    font-size: 20px;
+  }
+  .faq__questions-item p {
+    font-size: 18px;
+  }
+  .footer {
+    padding: 20px 0 20px 0;
+  }
+  .footer__social__link {
+    width: 33px;
+    height: 33px;
+  }
+}
+@media (max-width: 1400px) {
+  .catalog__wrapper {
+    margin-top: 80px;
   }
 }
 .show {

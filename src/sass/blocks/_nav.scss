@@ -1,8 +1,5 @@
 @import "../base/variables";
 
-//.facebook, .vk {
-//  display: none;
-//}
 
 .nav {
   &__social__wrapper {
@@ -12,6 +9,8 @@
   }
 
   &__wrapper {
+    position: relative;
+    z-index: 1000;
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     gap: 20px;
