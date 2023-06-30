@@ -111,6 +111,12 @@ body {
   background-color: #65BC54;
   border: none;
 }
+.nav .social__link-fb:hover {
+  background-color: blue;
+}
+.nav .social__link-vk:hover {
+  background-color: #4C75A3;
+}
 .nav__theme {
   display: none;
   background: none;
@@ -352,7 +358,6 @@ body {
 }
 .catalog__slider img {
   border-radius: 20px 20px 0 0;
-  width: 100%;
 }
 .catalog__card__info {
   min-height: 220px;
@@ -519,7 +524,6 @@ body {
   justify-content: center;
   text-align: center;
   align-items: center;
-  border: 5px solid #6747E9;
   width: 1286px;
   height: 474px;
   border-radius: 30px;
@@ -767,6 +771,24 @@ body {
   height: 500px;
 }
 
+@media (max-width: 1537px) {
+  .nav__bar-list_wrapper li a {
+    font-size: 16px;
+  }
+  .promo__text__wrapper {
+    padding-top: 100px;
+  }
+  .promo__header {
+    font-size: 44px;
+  }
+  .promo__phone {
+    font-size: 26px;
+    margin-top: 32px;
+  }
+  .catalog__wrapper {
+    margin-top: 160px;
+  }
+}
 .show {
   display: block;
 }

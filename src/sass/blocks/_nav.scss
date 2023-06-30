@@ -120,6 +120,16 @@
         border: none;
       }
     }
+    &-fb {
+      &:hover {
+        background-color: blue;
+      }
+    }
+    &-vk {
+      &:hover {
+        background-color: #4C75A3;
+      }
+    }
 
   }
 
