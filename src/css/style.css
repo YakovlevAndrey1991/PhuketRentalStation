@@ -24,6 +24,8 @@ body {
   padding: 0 139px 0 139px;
 }
 .nav__wrapper {
+  position: relative;
+  z-index: 1000;
   display: flex;
 }
 .nav__padding {
@@ -63,11 +65,10 @@ body {
   text-decoration: none;
   color: white;
   transition: 0.2s all;
-  border-bottom: 1px solid #1A1A1A;
 }
 .nav__bar-list_wrapper li a:hover {
   color: #6747E9;
-  border-bottom: 1px solid #6747E9;
+  box-shadow: 0px 1px 0px 0px #6747E9;
 }
 .nav__social {
   background: none;

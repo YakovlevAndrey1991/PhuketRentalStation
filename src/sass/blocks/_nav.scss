@@ -10,8 +10,8 @@
   }
 
   &__wrapper {
-    //position: relative;
-    //z-index: 1000;
+    position: relative;
+    z-index: 1000;
     //display: grid;
     //grid-template-columns: repeat(16, 1fr);
     //gap: 20px;
@@ -63,13 +63,15 @@
           color: white;
           transition: 0.2s all;
 
-          border-bottom: 1px solid #1A1A1A;
+          //box-shadow: 0px 1px 0px 0px $purple;
+
 
         }
 
         a:hover {
           color: $purple;
-          border-bottom: 1px solid $purple;
+          //border-bottom: 1px solid $purple;
+          box-shadow: 0px 1px 0px 0px $purple;
         }
       }
     }
