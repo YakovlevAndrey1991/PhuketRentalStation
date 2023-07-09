@@ -1,9 +1,13 @@
 @import "../base/variables";
 
 .location {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  padding: 0 20px 0 20px;
 
   &__wrapper {
-    margin: 70px 20px 0 139px;
+    margin-top: 70px;
+    //margin: 70px 20px 0 139px;
     display: flex;
     gap: 133px;
   }

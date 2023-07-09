@@ -2,6 +2,9 @@
   .catalog__wrapper {
     margin-top: 160px;
   }
+  .catalog__cards__wrapper {
+    gap: 20px;
+  }
   .about__header-header {
     font-size: 36px;
   }
@@ -71,7 +74,7 @@
   }
   .about__header {
     margin-top: 100px;
-    margin-right: 90px;
+    //margin-right: 90px;
     gap: 192px;
   }
   .about__header-header {
@@ -105,7 +108,7 @@
     font-size: 18px;
   }
   .footer {
-    padding: 20px 0 20px 0;
+    //padding: 20px 0 20px 0;
   }
   .footer__social__link {
     width: 33px;
@@ -203,6 +206,12 @@
   .promo__phone {
     font-size: 24px;
   }
+
+  .promo__rectangle img {
+    position: relative;
+    top: 55px;
+    margin-right: 0;
+  }
   .catalog__header {
     font-size: 32px;
   }
@@ -279,10 +288,10 @@
 
 @media (max-width: 744px) {
 
-  //.nav__bar-list_wrapper {
-  //  position: fixed;
-  //  flex-direction: column;;
-  //}
+  .nav__bar-list_wrapper {
+    position: fixed;
+    flex-direction: column;;
+  }
 
 
 

@@ -1,18 +1,18 @@
 @import "../base/variables";
 
 .footer {
-  padding: 25px 0 25px 0;
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  padding: 15px 20px 15px 20px;
   &__wrapper {
-    display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    padding: 30px 20px 0 20px ;
     gap: 20px;
   }
   &__social {
     grid-column: 14/16;
   }
   &__bar {
-    grid-column: 5/11;
+    justify-content: center;
+    margin-left: 0;
   }
 }
 

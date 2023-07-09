@@ -1,8 +1,16 @@
 @import "../base/variables";
 
+.container {
+  //grid-column: 2/16;
+  //padding: 0px 20px 0px 20px;
+}
 
 .nav {
-  padding: 0 139px 0 139px;
+
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  padding: 0 20px 0 20px;
+  //padding: 0 139px 0 139px;
   &__social__wrapper {
     //display: flex;
     //align-items: center;
