@@ -4,7 +4,17 @@
   //grid-column: 2/16;
   //padding: 0px 20px 0px 20px;
 }
+.burger {
 
+  width: 24px;
+  height: 24px;
+}
+.burger span {
+  display: inline-block;
+  width: 18px;
+  height: 2px;
+  background-color: #fff;
+}
 .nav {
 
   display: grid;
@@ -78,6 +88,7 @@
 
         a:hover {
           color: $purple;
+          border: none;
           //border-bottom: 1px solid $purple;
           box-shadow: 0px 1px 0px 0px $purple;
         }

@@ -1,4 +1,5 @@
 .promo {
+  position: relative;
   &__wrapper {
     position: relative;
     display: grid;
@@ -61,4 +62,28 @@
     }
   }
 
+}
+
+.img-box {
+  position: relative;
+  grid-column: 8/17;
+}
+
+.img-box img {
+  width: 100%;
+  top: -80px;
+  //left: -50px;
+  position: absolute;
+  //width: 90%;
+}
+
+.rectangle {
+  z-index: -1000;
+  right: 20px;
+  top: 0;
+  position: absolute;
+  width: 860px;
+  height: 740px;
+  background: linear-gradient(116.95deg, #9075FF 15.81%, #3B1BBD 105.38%);
+  border-radius: 0 0 30px 30px;
 }
