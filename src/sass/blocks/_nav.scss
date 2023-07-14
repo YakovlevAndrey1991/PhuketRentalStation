@@ -4,17 +4,27 @@
   //grid-column: 2/16;
   //padding: 0px 20px 0px 20px;
 }
-.burger {
 
+.burger {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  gap: 4px;
   width: 24px;
   height: 24px;
 }
+
 .burger span {
-  display: inline-block;
   width: 18px;
   height: 2px;
   background-color: #fff;
 }
+
+span.short {
+  width: 14px;
+}
+
 .nav {
 
   display: grid;
@@ -44,7 +54,12 @@
   }
 
   &__logo {
-    //grid-column: 2/4;
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  &__logo__wrapper {
     gap: 11px;
     display: flex;
     min-width: 200px;
@@ -138,23 +153,27 @@
       background-color: #393E52;
       border: none;
     }
+
     &-telegram {
       &:hover {
         background-color: #1895D1;
         border: none;
       }
     }
+
     &-wa {
       &:hover {
         background-color: #65BC54;
         border: none;
       }
     }
+
     &-fb {
       &:hover {
         background-color: blue;
       }
     }
+
     &-vk {
       &:hover {
         background-color: #4C75A3;
@@ -258,8 +277,9 @@
 }
 
 .wa:hover {
-      background-color: #25D366;
+  background-color: #25D366;
 }
+
 .telegram__link {
   &:hover {
     background-color: red;
