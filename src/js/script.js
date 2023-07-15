@@ -1,3 +1,5 @@
+
+
 const btn = document.querySelectorAll('.toBook');
 const body = document.querySelector("body");
 const modalWrapper = document.querySelector('.modal__window')
@@ -6,6 +8,7 @@ const modal = document.querySelector('.overlay__nob');
 const sliderWrapper = document.querySelector('.catalog__slider');
 const burger = document.querySelector('.burger')
 const navBar = document.querySelector('.nav__bar')
+const menuItem = document.querySelectorAll('.bar__link');
 
 const question1 = document.querySelector('#question_1');
 const question2 = document.querySelector('#question_2');
@@ -18,8 +21,22 @@ const answer3 = document.querySelector('#answer_3');
 const answer4 = document.querySelector('#answer_4');
 const answer5 = document.querySelector('#answer_5');
 
-burger.addEventListener('click', () => {
+function openBar() {
     navBar.classList.toggle('nav__bar__active')
+    burger.classList.toggle('burger__active')
+    body.classList.toggle('hidden')
+}
+
+
+burger.addEventListener('click', () => {
+    openBar()
+
+})
+
+menuItem.forEach(item => {
+    item.addEventListener('click', () => {
+        openBar()
+    })
 })
 
 
