@@ -31,6 +31,9 @@ span.short {
 }
 
 .burger {
+  top: 0;
+  right: 0;
+  position: relative;
   display: none;
   flex-direction: column;
   align-items: end;
@@ -774,6 +777,11 @@ span.short {
   border: 1px solid #6747E9;
 }
 
+.mobile-footer {
+  display: none;
+  justify-content: center;
+}
+
 .overlay__nob {
   display: none;
   position: fixed;
@@ -1136,6 +1144,9 @@ span.short {
   .burger {
     display: flex;
   }
+  .burger__close {
+    display: block;
+  }
   .nav__logo {
     padding-top: 20px;
     padding-right: 10px;
@@ -1257,6 +1268,15 @@ span.short {
   .faq__header-header h2 {
     font-size: 22px;
   }
+  .footer {
+    padding: 0;
+    margin: 0;
+    display: unset;
+  }
+  .mobile-footer {
+    padding: 20px;
+    display: flex;
+  }
   .footer__bar {
     display: none;
   }
@@ -1267,11 +1287,16 @@ span.short {
   .footer__logo {
     display: none;
   }
+  .footer__wrapper {
+    display: none;
+  }
 }
 @media (max-width: 577px) {
   .burger {
-    position: relative;
-    z-index: 1;
+    position: fixed;
+    z-index: 1000;
+    top: 25px;
+    right: 15px;
   }
   .nav__logo {
     padding-top: 15px;
@@ -1420,11 +1445,23 @@ span.short {
     padding: 0;
     margin-top: 0;
   }
+  .footer {
+    margin: 0;
+    padding: 0;
+    display: unset;
+  }
+  .footer__wrapper {
+    display: none;
+  }
+  .mobile-footer {
+    padding: 20px;
+    display: flex;
+  }
 }
 @media (max-width: 431px) {
   .burger {
-    position: relative;
-    z-index: 1;
+    position: fixed;
+    z-index: 1000;
   }
   .nav__logo {
     padding-top: 15px;
@@ -1562,8 +1599,8 @@ span.short {
     gap: 20px;
   }
   .footer__social__link {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
   }
   .footer__social__link img {
     width: 20px;
@@ -1573,8 +1610,40 @@ span.short {
     padding: 0;
     margin-top: 0;
   }
+  .footer {
+    padding: 0;
+    margin: 0;
+    display: unset;
+  }
+  .mobile-footer {
+    padding: 20px;
+    display: flex;
+  }
+  .footer__wrapper {
+    display: none;
+  }
+  .footer__list_wrapper {
+    padding: 0;
+    margin: 0;
+  }
+  .modal__window {
+    width: 310px;
+    height: 310px;
+  }
+  .btn {
+    width: 140px;
+  }
+  .modal__window .modal__descr h3 {
+    font-size: 18px;
+  }
+  .modal__window .modal__close {
+    left: 90%;
+  }
 }
 @media (max-width: 341px) {
+  .footer__wrapper {
+    display: none;
+  }
   .footer__list_wrapper {
     gap: 10px;
   }
