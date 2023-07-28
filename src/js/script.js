@@ -1,4 +1,11 @@
-
+$(document).ready(function (){
+    $('.catalog__slider').slick({
+        arrows: true,
+        dots: true,
+        adaptiveHeight: true,
+        slidesToShow: 1,
+    });
+})
 
 const btn = document.querySelectorAll('.toBook');
 const body = document.querySelector("body");

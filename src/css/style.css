@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -19,6 +20,19 @@ body {
   max-width: 1920px;
   width: 100%;
   padding: 0;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 120%;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 120%;
 }
 
 @media (max-width: 1260px) {
@@ -271,12 +285,6 @@ span.short {
   padding-top: 120px;
   grid-column: 2/8;
 }
-.promo__header {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 55px;
-  line-height: 120%;
-}
 .promo__title {
   padding-top: 30px;
   font-weight: 400;
@@ -394,11 +402,6 @@ span.short {
 }
 .catalog__header {
   text-align: center;
-}
-.catalog__header h2 {
-  font-weight: 500;
-  font-size: 45px;
-  line-height: 120%;
 }
 .catalog__tabs {
   display: none;
@@ -530,9 +533,6 @@ span.short {
 .about__header-header {
   width: 300px;
   padding-left: 25px;
-  font-weight: 500;
-  font-size: 45px;
-  line-height: 120%;
 }
 .about__descr {
   font-weight: 400;
@@ -579,9 +579,6 @@ span.short {
 .location__header {
   padding-left: 25px;
   border-left: 5px solid #6747E9;
-  font-weight: 500;
-  font-size: 45px;
-  line-height: 120%;
 }
 .location__title {
   margin-top: 30px;
@@ -634,12 +631,6 @@ span.short {
   width: 474px;
   border-left: 5px solid #ffffff;
   padding-left: 25px;
-}
-.faq__header-header h2 {
-  color: white;
-  font-weight: 500;
-  font-size: 45px;
-  line-height: 120%;
 }
 .faq__header-box {
   z-index: 1;
@@ -864,12 +855,103 @@ span.short {
   height: 500px;
 }
 
+/* Слайдер запущен */
+/* Слайдер с точками */
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Слайд */
+/* Слайд активный (показывается) */
+/* Слайд основной */
+/* Слайд по центру */
+/* Клонированный слайд */
+/* Стрелка */
+/* Стрелка влево */
+/* Стрелка вправо */
+/* Стрелка не активная */
+/* Точки (булиты) */
+.slick-dots {
+  top: 92%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Активная точка */
+/* Элемент точки */
+.slider__item img {
+  width: 100%;
+}
+
+.catalog__slider {
+  position: relative;
+  /*padding: 0 50px;*/
+}
+
+.slick-arrow {
+  margin: -30px 15px 0 15px;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  font-size: 0;
+  width: 30px;
+  height: 50px;
+}
+
+.slick-arrow.slick-prev {
+  left: 0;
+  background: url("../icons/prev.svg") 0 0/100% no-repeat;
+  border: none;
+}
+
+.slick-arrow.slick-next {
+  right: 0;
+  background: url("../icons/next.svg") 0 0/100% no-repeat;
+  border: none;
+}
+
+.slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.slick-dots li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.slick-dots li button {
+  padding: 1px;
+  border: none;
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.slick-dots li.slick-active button {
+  background-color: #6747E9;
+  border: 1px solid white;
+}
+
+.slider__item {
+  text-align: center;
+}
+
 @media (max-width: 1700px) {
   .catalog__cards__wrapper {
     gap: 20px;
-  }
-  .about__header-header {
-    font-size: 36px;
   }
   .about__header {
     gap: 180px;
@@ -879,6 +961,12 @@ span.short {
   }
 }
 @media (max-width: 1537px) {
+  h1 {
+    font-size: 44px;
+  }
+  h2 {
+    font-size: 36px;
+  }
   .img-box img {
     width: 100%;
     left: unset;
@@ -893,9 +981,6 @@ span.short {
   .promo__text__wrapper {
     padding-top: 100px;
   }
-  .promo__header {
-    font-size: 44px;
-  }
   .promo__phone {
     font-size: 26px;
     margin-top: 32px;
@@ -905,9 +990,6 @@ span.short {
   }
   .catalog__card__info {
     min-height: 188px;
-  }
-  .catalog__header h2 {
-    font-size: 36px;
   }
   .catalog__card__wrapper {
     max-width: 380px;
@@ -940,9 +1022,6 @@ span.short {
     margin-top: 100px;
     gap: 192px;
   }
-  .about__header-header {
-    font-size: 36px;
-  }
   .about__descr {
     font-size: 22px;
   }
@@ -957,9 +1036,6 @@ span.short {
   }
   .faq__wrapper {
     gap: 60px;
-  }
-  .faq__header-header h2 {
-    font-size: 34px;
   }
   .faq__questions-item-wrapper span {
     font-size: 20px;
@@ -1046,6 +1122,12 @@ span.short {
   }
 }
 @media (max-width: 1024px) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 32px;
+  }
   .nav__bar {
     margin-left: 40px;
   }
@@ -1059,9 +1141,6 @@ span.short {
   .img-box img {
     top: 36px;
   }
-  .promo__header {
-    font-size: 40px;
-  }
   .promo__phone {
     font-size: 24px;
   }
@@ -1070,18 +1149,12 @@ span.short {
     top: 55px;
     margin-right: 0;
   }
-  .catalog__header {
-    font-size: 32px;
-  }
   .catalog__note {
     font-size: 12px;
   }
   .about__header {
     margin: 78px 20px 0 20px;
     gap: 90px;
-  }
-  .about__header-header {
-    font-size: 32px;
   }
   .about__descr {
     text-align: center;
@@ -1143,6 +1216,12 @@ span.short {
   }
 }
 @media (max-width: 835px) {
+  h1 {
+    font-size: 35px;
+  }
+  h2 {
+    font-size: 28px;
+  }
   .burger {
     display: flex;
   }
@@ -1189,9 +1268,6 @@ span.short {
   .promo__wrapper {
     grid-template-columns: repeat(12, 1fr);
   }
-  .promo__header {
-    font-size: 35px;
-  }
   .promo__title {
     font-size: 18px;
     padding-top: 25px;
@@ -1218,14 +1294,10 @@ span.short {
   .catalog__wrapper {
     margin-top: 50px;
   }
-  .catalog__header h2 {
-    font-size: 28px;
-  }
   .footer__list_wrapper {
     padding: -20px 0;
   }
   .about__header-header {
-    font-size: 25px;
     padding-left: 14px;
   }
   .about__header {
@@ -1248,9 +1320,6 @@ span.short {
   .location__header {
     padding-left: 14px;
   }
-  .location__header h2 {
-    font-size: 25px;
-  }
   .location__address-text {
     font-size: 14px;
   }
@@ -1266,9 +1335,6 @@ span.short {
   }
   .faq__header-header {
     padding-left: 18px;
-  }
-  .faq__header-header h2 {
-    font-size: 22px;
   }
   .footer {
     padding: 0;
@@ -1363,9 +1429,6 @@ span.short {
   }
   .about {
     padding: 0;
-  }
-  .catalog__header h2 {
-    font-size: 28px;
   }
   .about__header {
     margin-left: 16px;
@@ -1566,9 +1629,6 @@ span.short {
   .location__wrapper {
     flex-direction: column;
   }
-  .catalog__header h2 {
-    font-size: 28px;
-  }
   .catalog__note {
     padding: 0 20px;
   }
@@ -1643,6 +1703,9 @@ span.short {
   }
 }
 @media (max-width: 341px) {
+  h1 {
+    font-size: 24px;
+  }
   .footer__wrapper {
     display: none;
   }
@@ -1656,17 +1719,11 @@ span.short {
     width: 100px;
     height: 296px;
   }
-  .promo__header {
-    font-size: 24px;
-  }
   .promo__title {
     font-size: 16px;
   }
   .promo__phone {
     font-size: 22px;
-  }
-  .catalog__header h2 {
-    font-size: 28px;
   }
 }
 .show {
